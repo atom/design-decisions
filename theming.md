@@ -35,6 +35,8 @@ body,
 }
 ```
 
+Another option would be to have "[user variables](https://github.com/atom/atom/issues/5903)" and recompile all Less files. There was a prototype, but it had to be abandoned because performance wasn't great. And sometimes there where glitches where Chromium would not update a GPU layer or it missed some styles. 
+
 ### Solution:
 
 Themes use CSS **custom properties** instead. This allows to update their values at runtime without needing to recompile all styles.
@@ -52,11 +54,9 @@ Themes use CSS **custom properties** instead. This allows to update their values
 
 ### Concern:
 
-> Color functions like darken/lighten don't work with custom properties. 
+> Color functions like darken() or lighten() don't work with custom properties.
 
 Color functions will be supported in CSS at some point. But that will probably still take a while. In the meantime, package authors could read the custom property with JS, change it with a library like [chroma.js](https://gka.github.io/chroma.js/) and re-apply the new value to their package. We'll have to see how often this is needed in the real world.
-
-
 
 
 
