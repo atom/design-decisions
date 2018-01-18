@@ -18,7 +18,7 @@ What follows goes into more detail by first examining current problems and then 
 
 ## Problem 1 (variables):
 
-Theme variables (ui-variables.less and syntax-variables.less) [can't be changed](https://github.com/atom/atom/issues/5903) by users or packages.
+Theme variables ( [ui-variables.less](https://github.com/atom/atom/blob/4f0209bb8e1d2343b09dba151650c4123ea87a34/static/variables/ui-variables.less) and [syntax-variables.less](https://github.com/atom/atom/blob/4f0209bb8e1d2343b09dba151650c4123ea87a34/static/variables/syntax-variables.less) ) [can't be changed](https://github.com/atom/atom/issues/5903) by users or packages.
 
 It is possible to override styles, but that could get hard to maintain for [many places](https://github.com/atom/atom/issues/3636#issuecomment-75157082).
 
