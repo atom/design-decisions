@@ -141,7 +141,7 @@ States are prefixed with a short verb, like `is-` or `has-`. Since these class n
 - Styling elements (like `div`) should be avoided. This makes it easier to switch elements, like from a `<button>` to `<a>`.
 - No utility classes. Themes and user styles can only override CSS but not change the markup. Therefore having utility classes doesn't make as much sense once you override them.
 - Avoid using existing CSS classes to reference elements in the DOM. That way when the markup changes, functionality and specs will less likely break. Instead use `ref` attributes (`ref="commitButton"`).
-- Avoid changing modifiers at runtime. If you're in need, consider changing the modifier class into a state. For example if you often want to switch a default button to a primary button, change the `github-CommitBox-commitButton--primary` modifier class into a `is-primary` state instead. Since state classes are decoupled from components, it's easier to change component names, but keep the states the same.
+- Avoid changing modifiers at runtime. If you're in need, consider turning the modifier class into a state. For example if you often want to switch a default button to a primary button, change the `github-CommitBox-commitButton--primary` modifier class into a `is-primary` state instead. Since state classes are decoupled from components, it's easier to reuse that state class even if the component changes later.
 
 
 ## Benefits
