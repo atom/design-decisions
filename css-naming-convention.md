@@ -136,7 +136,7 @@ States are prefixed with a short verb, like `is-` or `has-`. Since these class n
 
 
 
-## More guidelines, not crucial, but still good to know and follow. ;-)
+## More guidelines
 
 - Styling elements (like `div`) should be avoided. This makes it easier to switch elements, like from a `<button>` to `<a>`.
 - No utility classes. Themes and user styles can only override CSS but not change the markup. Therefore having utility classes doesn't make as much sense once you override them.
