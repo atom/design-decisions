@@ -10,11 +10,11 @@ Below the commit box as a possible example:
 
 ```html
 <div class='gitub-CommitBox'>
-	<div class='gitub-CommitBox-editor'></div>
-	<footer class='gitub-CommitBox-footer'>
-	  <button class='gitub-CommitBox-button'>Commit to sm-branch</button>
-	  <div class='gitub-CommitBox-counter is-warning'>50</div>
-	</footer>
+  <div class='gitub-CommitBox-editor'></div>
+  <footer class='gitub-CommitBox-footer'>
+    <button class='gitub-CommitBox-button'>Commit to sm-branch</button>
+    <div class='gitub-CommitBox-counter is-warning'>50</div>
+  </footer>
 </div>
 ```
 
